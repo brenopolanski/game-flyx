@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GlobalEvent</name>
+    <events>
+        <comment>Game #var</comment>
+        <variable constant="0" name="velocidade" sid="3780502015788696" static="0" type="number">0</variable>
+        <variable constant="0" name="habilita" sid="3726956990409278" static="0" type="number">0</variable>
+        <comment>Level #1</comment>
+        <variable constant="0" name="pontosLevel11" sid="6481979756954567" static="0" type="number">0</variable>
+        <variable constant="0" name="p11" sid="652056542025739" static="0" type="number">0</variable>
+        <comment>Level #2</comment>
+        <variable constant="0" name="pontosLevel12" sid="3482675423445366" static="0" type="number">0</variable>
+        <variable constant="0" name="p12" sid="584981083839791" static="0" type="number">0</variable>
+        <comment>Level #3</comment>
+        <variable constant="0" name="pontosLevel13" sid="8217549322209499" static="0" type="number">0</variable>
+        <variable constant="0" name="p13" sid="8198735718850502" static="0" type="number">0</variable>
+        <comment>Level #4</comment>
+        <variable constant="0" name="pontosLevel14" sid="5990131671649987" static="0" type="number">0</variable>
+        <variable constant="0" name="p14" sid="7380445733580583" static="0" type="number">0</variable>
+        <comment>Level #5</comment>
+        <variable constant="0" name="pontosLevel15" sid="2043564701226893" static="0" type="number">0</variable>
+        <variable constant="0" name="p15" sid="8652850285769645" static="0" type="number">0</variable>
+    </events>
+</c2eventsheet>

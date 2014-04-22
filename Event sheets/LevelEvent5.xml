@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>LevelEvent5</name>
+    <events>
+        <comment>Som helicoptero</comment>
+        <event-block sid="2038431292613836">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5845972998575044" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="2635702269621387" type="Audio">
+                    <param id="0" name="Audio file">Helicoptero</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;2&quot;</param>
+                </action>
+                <action id="4" name="Preload" sid="4202753137803758" type="Audio">
+                    <param id="0" name="Audio file">Helicoptero</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Movimentação dos objetos e sets nos textos do game</comment>
+        <event-block sid="4096000187121531">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="9198702259920913" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="7503123045625818" type="System">
+                    <param id="0" name="Variable">pontosLevel15</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-1" name="Set X" sid="2104736031690841" type="BlocoA">
+                    <param id="0" name="X">BlocoA.X-5</param>
+                </action>
+                <action id="-1" name="Set X" sid="9746932400514203" type="BlocoC">
+                    <param id="0" name="X">BlocoC.X-5</param>
+                </action>
+                <action id="-1" name="Set X" sid="6096193527698899" type="CaixaBonus">
+                    <param id="0" name="X">CaixaBonus.X-5</param>
+                </action>
+                <action id="-2" name="Set Y" sid="3863717150637917" type="TBonus">
+                    <param id="0" name="Y">Tbonus.Y-0.5</param>
+                </action>
+                <action id="0" name="Set text" sid="8990474343178563" type="TBonus">
+                    <param id="0" name="Text">&quot;+ 100&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="1485506553247595" type="TPontos">
+                    <param id="0" name="Text">pontosLevel15</param>
+                </action>
+                <action id="0" name="Set text" sid="8830030847135064" type="TVelocidade">
+                    <param id="0" name="Text">velocidade</param>
+                </action>
+                <action id="-1" name="Set X" sid="2806149287780936" type="MiniHeroi">
+                    <param id="0" name="X">MiniHeroi.x+0.7</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Movimento do Heroi</comment>
+        <event-block sid="9082993323159716">
+            <conditions>
+                <condition id="2" name="Is in touch" sid="4028519733546808" type="Touch" />
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="3" name="Apply impulse" sid="4430422333532837" type="Heroi">
+                    <param id="0" name="Impulse X">0</param>
+                    <param id="1" name="Implulse Y">-1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-10" name="Add to" sid="4798624484736402" type="System">
+                    <param id="0" name="Variable">velocidade</param>
+                    <param id="1" name="Value">25</param>
+                </action>
+                <action id="4" name="Set animation" sid="8563803837227551" type="Heroi">
+                    <param id="0" name="Animation">&quot;Movendo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Colisões</comment>
+        <event-block sid="755411859545846">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8908400931400561" type="Fim1">
+                    <param id="0" name="Object">TBonus</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="3756061374263879" type="TBonus" />
+            </actions>
+        </event-block>
+        <event-block sid="7881328650825536">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="653823494468494" type="TetoChao">
+                    <param id="0" name="Object">Fim2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="8541836778540599" type="TetoChao" />
+                <action id="-3" name="Create object" sid="7771216515320619" type="System">
+                    <param id="0" name="Object to create">TetoChao</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">TetoChao.X+1000</param>
+                    <param id="3" name="Y">TetoChao.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4685870501001911">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7352872583936866" type="BlocoA">
+                    <param id="0" name="Object">Fim1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="3091836516239863" type="BlocoA" />
+                <action id="-3" name="Create object" sid="886797470911701" type="System">
+                    <param id="0" name="Object to create">BlocoA</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">BlocoA.X+2500</param>
+                    <param id="3" name="Y">BlocoA.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2643920673618325">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4797166137209724" type="BlocoC">
+                    <param id="0" name="Object">Fim1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="3952784961837683" type="BlocoC" />
+                <action id="-3" name="Create object" sid="8791637733139658" type="System">
+                    <param id="0" name="Object to create">BlocoC</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">BlocoC.X+2500</param>
+                    <param id="3" name="Y">BlocoC.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7191877650961646">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="705676119729105" type="CaixaBonus">
+                    <param id="0" name="Object">Fim1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="8167546884284217" type="CaixaBonus" />
+                <action id="-3" name="Create object" sid="403715002483565" type="System">
+                    <param id="0" name="Object to create">CaixaBonus</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">CaixaBonus.X+2500</param>
+                    <param id="3" name="Y">CaixaBonus.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3133986798092376">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6634181814648732" type="Heroi">
+                    <param id="0" name="Object">TetoChao</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="8071198752812019" type="Heroi" />
+                <action id="-2" name="Go to layout" sid="8530010596060444" type="System">
+                    <param id="0" name="Layout">MenuLevel</param>
+                </action>
+                <action id="6" name="Stop" sid="188736004671357" type="Audio">
+                    <param id="0" name="Tag">&quot;2&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="735798183128906">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4910909529909575" type="Heroi">
+                    <param id="0" name="Object">BlocoA</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="3818161773180711" type="Heroi" />
+                <action id="-2" name="Go to layout" sid="2469733744049398" type="System">
+                    <param id="0" name="Layout">MenuLevel</param>
+                </action>
+                <action id="6" name="Stop" sid="5547488175729681" type="Audio">
+                    <param id="0" name="Tag">&quot;2&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7596543996886501">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1226896968939888" type="Heroi">
+                    <param id="0" name="Object">BlocoC</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="1453011651641702" type="Heroi" />
+                <action id="-2" name="Go to layout" sid="4533884291102154" type="System">
+                    <param id="0" name="Layout">MenuLevel</param>
+                </action>
+                <action id="6" name="Stop" sid="2416513361009152" type="Audio">
+                    <param id="0" name="Tag">&quot;2&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9219513967933575">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3148818667734567" type="Heroi">
+                    <param id="0" name="Object">CaixaBonus</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="8753514603892449" type="CaixaBonus" />
+                <action id="-10" name="Add to" sid="647927840069888" type="System">
+                    <param id="0" name="Variable">pontosLevel15</param>
+                    <param id="1" name="Value">100</param>
+                </action>
+                <action id="-3" name="Create object" sid="6057215125424513" type="System">
+                    <param id="0" name="Object to create">TBonus</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">200</param>
+                    <param id="3" name="Y">25</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8754570689986142">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9609452156957942" type="MiniHeroi">
+                    <param id="0" name="Object">Limite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="6664784354948691" type="Audio">
+                    <param id="0" name="Tag">&quot;2&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="8571172446378856" type="System">
+                    <param id="0" name="Layout">MenuLevel</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Variação da velocidade</comment>
+        <event-block sid="4843239534740166">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="1505012647316007" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="5070325116611471" type="TVelocidade">
+                    <param id="0" name="Text">velocidade</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4548471115691979">
+            <conditions>
+                <condition id="5" name="On any finished" sid="4395472703060252" type="Heroi" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6479299602260551" type="System">
+                    <param id="0" name="Variable">velocidade</param>
+                    <param id="1" name="Value">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7303634732365285">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3520115360280406" type="System">
+                    <param id="0" name="Variable">velocidade</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">400</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4324705667304794" type="System">
+                    <param id="0" name="Variable">velocidade</param>
+                    <param id="1" name="Value">450</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>If game was paused, unpause </comment>
+        <event-block sid="3396835383687175">
+            <conditions>
+                <condition id="3" name="On touched object" sid="4670543144540997" type="Touch">
+                    <param id="0" name="Object">Continue</param>
+                </condition>
+                <condition id="-8" name="Is boolean instance variable set" sid="5472360349449257" type="Heroi">
+                    <param id="0" name="Instance variable">GamePaused</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="3591126340343008" type="System">
+                    <param id="0" name="Time scale">1.0</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="4851892173320518" type="Heroi">
+                    <param id="0" name="Instance variable">GamePaused</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7116236184732571" type="Continue">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="7434990115124837" type="System">
+                    <param id="0" name="Layer">&quot;Background&quot;</param>
+                    <param id="1" name="Opacity">100</param>
+                </action>
+                <action id="-18" name="Set layer opacity" sid="5093243299023107" type="System">
+                    <param id="0" name="Layer">&quot;GameObjects&quot;</param>
+                    <param id="1" name="Opacity">100</param>
+                </action>
+                <action id="0" name="Play" sid="5851166986075968" type="Audio">
+                    <param id="0" name="Audio file">Helicoptero</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;2&quot;</param>
+                </action>
+                <action id="4" name="Preload" sid="3551668202516907" type="Audio">
+                    <param id="0" name="Audio file">Helicoptero</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

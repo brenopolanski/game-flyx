@@ -1,0 +1,775 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MenuLevelEvent</name>
+    <events>
+        <comment>Sets texto com zero</comment>
+        <event-block sid="9429790165943456">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="9922571159589097" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="3845851672523431" type="P11">
+                    <param id="0" name="Text">p11</param>
+                </action>
+                <action id="0" name="Set text" sid="5748438583981882" type="P12">
+                    <param id="0" name="Text">p12</param>
+                </action>
+                <action id="0" name="Set text" sid="9622563338010629" type="P13">
+                    <param id="0" name="Text">p13</param>
+                </action>
+                <action id="0" name="Set text" sid="3536813643122682" type="P14">
+                    <param id="0" name="Text">p14</param>
+                </action>
+                <action id="0" name="Set text" sid="4539469074957486" type="P15">
+                    <param id="0" name="Text">p15</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Level #1</comment>
+        <event-block sid="8999027091031622">
+            <conditions>
+                <condition id="3" name="On touched object" sid="5558129173576692" type="Touch">
+                    <param id="0" name="Object">BtnLevel1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="551122683560661" type="System">
+                    <param id="0" name="Layout">Level1</param>
+                </action>
+                <action id="-9" name="Set value" sid="8327772488281812" type="System">
+                    <param id="0" name="Variable">pontosLevel11</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7298163018445614">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="9821060047024147" type="System">
+                    <param id="0" name="Variable">p11</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">pontosLevel11</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7419464377552629" type="System">
+                    <param id="0" name="Variable">p11</param>
+                    <param id="1" name="Value">pontosLevel11</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8220848563309741">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8409159709774095" type="System">
+                    <param id="0" name="Variable">p11</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="7848302131225903" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">207</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2065550825885778">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3344639480515039" type="System">
+                    <param id="0" name="Variable">p11</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">500</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="4067374544710178" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">207</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+                <action id="-3" name="Create object" sid="3155286171380295" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">244</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2260176048344286">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="9358880709545796" type="System">
+                    <param id="0" name="Variable">p11</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1000</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="1206453863374806" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">207</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+                <action id="-3" name="Create object" sid="1529346563882523" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">244</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+                <action id="-3" name="Create object" sid="6775793380521625" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">283</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2135572106864349">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8585901137495807" type="System">
+                    <param id="0" name="Variable">p11</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2587023299658625" type="System">
+                    <param id="0" name="Variable">habilita</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4334752978380634">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5799872233611113" type="System">
+                    <param id="0" name="Variable">habilita</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="2451117041839586" type="System">
+                    <param id="0" name="Object to create">BtnLevel1</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">244</param>
+                    <param id="3" name="Y">395</param>
+                </action>
+                <action id="-3" name="Create object" sid="6591777456734967" type="System">
+                    <param id="0" name="Object to create">marcaA</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">244.009</param>
+                    <param id="3" name="Y">398.202</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Level #2</comment>
+        <event-block sid="1938696030208488">
+            <conditions>
+                <condition id="3" name="On touched object" sid="7703652819206389" type="Touch">
+                    <param id="0" name="Object">BtnLevel2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="6483440384446492" type="System">
+                    <param id="0" name="Layout">Level2</param>
+                </action>
+                <action id="-9" name="Set value" sid="8829100880360977" type="System">
+                    <param id="0" name="Variable">pontosLevel12</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2361445179854282">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="177122993187333" type="System">
+                    <param id="0" name="Variable">p12</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">pontosLevel12</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="8066635189107852" type="System">
+                    <param id="0" name="Variable">p12</param>
+                    <param id="1" name="Value">pontosLevel12</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2790141161348634">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3921460541724463" type="System">
+                    <param id="0" name="Variable">p12</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="1448109647261614" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">421.115</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9307905058482903">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="850019430832325" type="System">
+                    <param id="0" name="Variable">p12</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">500</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="2318931786172719" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">421.115</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+                <action id="-3" name="Create object" sid="407463155508463" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">458.115</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6965813990807221">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8212730931167694" type="System">
+                    <param id="0" name="Variable">p12</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1000</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="6909985234416834" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">421.115</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+                <action id="-3" name="Create object" sid="4062846486758014" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">458.115</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+                <action id="-3" name="Create object" sid="5526836653196653" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">497.115</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="92675972792225">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8754448346429571" type="System">
+                    <param id="0" name="Variable">p11</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="783763825137175" type="System">
+                    <param id="0" name="Variable">p12</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4720915613022408" type="System">
+                    <param id="0" name="Variable">habilita</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2287828288049961">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5225406670535881" type="System">
+                    <param id="0" name="Variable">habilita</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="4789055385601733" type="System">
+                    <param id="0" name="Object to create">BtnLevel2</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">458</param>
+                    <param id="3" name="Y">395</param>
+                </action>
+                <action id="-3" name="Create object" sid="5275217415786563" type="System">
+                    <param id="0" name="Object to create">marcaA</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">457.913</param>
+                    <param id="3" name="Y">398.202</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Level #3</comment>
+        <event-block sid="7355105032604997">
+            <conditions>
+                <condition id="3" name="On touched object" sid="8446056515376352" type="Touch">
+                    <param id="0" name="Object">BtnLevel3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="2087855685249274" type="System">
+                    <param id="0" name="Layout">Level3</param>
+                </action>
+                <action id="-9" name="Set value" sid="8444791158439948" type="System">
+                    <param id="0" name="Variable">pontosLevel13</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1621642434146623">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5179817309024927" type="System">
+                    <param id="0" name="Variable">p13</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">pontosLevel13</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6759695334659059" type="System">
+                    <param id="0" name="Variable">p13</param>
+                    <param id="1" name="Value">pontosLevel13</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9498054143367173">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6058992103397074" type="System">
+                    <param id="0" name="Variable">p13</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="6725352112487485" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">645</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3088630480348252">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8833481609492213" type="System">
+                    <param id="0" name="Variable">p13</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">600</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="3151888313869972" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">645</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+                <action id="-3" name="Create object" sid="2089589666998237" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">682</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6503572818008565">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="957122431312716" type="System">
+                    <param id="0" name="Variable">p13</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1200</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="6309545685893697" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">645</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+                <action id="-3" name="Create object" sid="9710280405913571" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">682</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+                <action id="-3" name="Create object" sid="6774519186535486" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">721</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9128228670014444">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5499347435794131" type="System">
+                    <param id="0" name="Variable">p11</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8827286011280984" type="System">
+                    <param id="0" name="Variable">p12</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5249262184278426" type="System">
+                    <param id="0" name="Variable">p13</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="6005962113798913" type="System">
+                    <param id="0" name="Variable">habilita</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="314460125019459">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3010858573737072" type="System">
+                    <param id="0" name="Variable">habilita</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="8990958812784657" type="System">
+                    <param id="0" name="Object to create">BtnLevel3</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">680</param>
+                    <param id="3" name="Y">395</param>
+                </action>
+                <action id="-3" name="Create object" sid="9819108814042984" type="System">
+                    <param id="0" name="Object to create">marcaA</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">680.217</param>
+                    <param id="3" name="Y">398.202</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Level #4</comment>
+        <event-block sid="2697016887723587">
+            <conditions>
+                <condition id="3" name="On touched object" sid="6947664997247401" type="Touch">
+                    <param id="0" name="Object">BtnLevel4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="5765293980008123" type="System">
+                    <param id="0" name="Layout">Level4</param>
+                </action>
+                <action id="-9" name="Set value" sid="3076121747857404" type="System">
+                    <param id="0" name="Variable">pontosLevel14</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="543962901666462">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7009245530647536" type="System">
+                    <param id="0" name="Variable">p14</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">pontosLevel14</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="5131003020521994" type="System">
+                    <param id="0" name="Variable">p14</param>
+                    <param id="1" name="Value">pontosLevel14</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1609969297739457">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7650028570462622" type="System">
+                    <param id="0" name="Variable">p14</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="7822358073647639" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">861.468</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8633816057532195">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2090976402602254" type="System">
+                    <param id="0" name="Variable">p14</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1000</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="391669887437069" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">861.468</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+                <action id="-3" name="Create object" sid="4179223949194174" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">898.468</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9913957621092424">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6167391009730531" type="System">
+                    <param id="0" name="Variable">p14</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1800</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="3932841713819548" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">861.468</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+                <action id="-3" name="Create object" sid="9325493275538089" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">898.468</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+                <action id="-3" name="Create object" sid="4448050336830959" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">937.468</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="546633817062249">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3157987388986119" type="System">
+                    <param id="0" name="Variable">p11</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="458128086558355" type="System">
+                    <param id="0" name="Variable">p12</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3164046736752074" type="System">
+                    <param id="0" name="Variable">p13</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="434239684565226" type="System">
+                    <param id="0" name="Variable">p14</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="1578571375253561" type="System">
+                    <param id="0" name="Variable">habilita</param>
+                    <param id="1" name="Value">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9785585247591411">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8281707662319764" type="System">
+                    <param id="0" name="Variable">habilita</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="7813530466457216" type="System">
+                    <param id="0" name="Object to create">BtnLevel4</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">898</param>
+                    <param id="3" name="Y">395</param>
+                </action>
+                <action id="-3" name="Create object" sid="5192712467897743" type="System">
+                    <param id="0" name="Object to create">marcaA</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">898.554</param>
+                    <param id="3" name="Y">398.202</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Level #5</comment>
+        <event-block sid="8926082536925422">
+            <conditions>
+                <condition id="3" name="On touched object" sid="5824549819587321" type="Touch">
+                    <param id="0" name="Object">BtnLevel5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="5254517408139389" type="System">
+                    <param id="0" name="Layout">Level5</param>
+                </action>
+                <action id="-9" name="Set value" sid="425208904154199" type="System">
+                    <param id="0" name="Variable">pontosLevel15</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6525607799905618">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8648829550541105" type="System">
+                    <param id="0" name="Variable">p15</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">pontosLevel15</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="9072597696148259" type="System">
+                    <param id="0" name="Variable">p15</param>
+                    <param id="1" name="Value">pontosLevel15</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1910184386420865">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="164336862743815" type="System">
+                    <param id="0" name="Variable">p15</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="5739398602904515" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">1078.423</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5865956586089575">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2576767141812818" type="System">
+                    <param id="0" name="Variable">p15</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1500</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="7264309516409668" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">1078.423</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+                <action id="-3" name="Create object" sid="3996367366486415" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">1115.423</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4017970946319231">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6816344037649854" type="System">
+                    <param id="0" name="Variable">p15</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">2500</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="5326291146613391" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">1078.423</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+                <action id="-3" name="Create object" sid="1804826309634771" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">1115.423</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+                <action id="-3" name="Create object" sid="7226275965205725" type="System">
+                    <param id="0" name="Object to create">Estrela</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">1154.423</param>
+                    <param id="3" name="Y">417</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3719953298325381">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="3464321544855868" type="System">
+                    <param id="0" name="Variable">p11</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3811822140076547" type="System">
+                    <param id="0" name="Variable">p12</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1420539860290519" type="System">
+                    <param id="0" name="Variable">p13</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8148023772780508" type="System">
+                    <param id="0" name="Variable">p14</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6807912147030225" type="System">
+                    <param id="0" name="Variable">p15</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7969038784699877" type="System">
+                    <param id="0" name="Variable">habilita</param>
+                    <param id="1" name="Value">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6244573394597426">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7566408743364256" type="System">
+                    <param id="0" name="Variable">habilita</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="1156738337549451" type="System">
+                    <param id="0" name="Object to create">BtnLevel5</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">1116</param>
+                    <param id="3" name="Y">395</param>
+                </action>
+                <action id="-3" name="Create object" sid="5070557458408592" type="System">
+                    <param id="0" name="Object to create">marcaA</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">1116.984</param>
+                    <param id="3" name="Y">398.202</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
