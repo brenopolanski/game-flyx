@@ -4,7 +4,7 @@ Game development with [Construct 2](https://www.scirra.com).
 
 ## Demo
 
-![image game-flyx](https://raw.github.com/brenopolanski/game-flyx/gh-assets/game-flyx.png)
+[![game-flyx](https://raw.github.com/brenopolanski/game-flyx/gh-assets/game-flyx.png)](http://brenopolanski.github.io/game-flyx/)
 
 > [Check it live](http://brenopolanski.github.io/game-flyx/).
 
